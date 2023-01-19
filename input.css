@@ -8,7 +8,9 @@ html {
 a {
   transition: 0.5ms ease-in;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 #button-apply:hover {
   /* hover:bg-lightBlue hover:border-b-[5px] border-b-transparent */
   background: #2600fe;
@@ -134,6 +136,14 @@ a {
   --curve: 40;
 }
 
+.link {
+  transition: border 0.1s ease;
+}
+.link:hover {
+  border-bottom: 2px solid #2600fe;
+  font-weight: 500;
+}
+
 /* .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -192,6 +202,7 @@ h1:last-of-type {
 }
 
 .box p {
+  margin-top: 5px;
   color: var(--grayishBlue);
 }
 
@@ -294,7 +305,7 @@ div.seperator {
 
 .faq-list > div {
   border-bottom: 0.07em solid #ededed;
-  padding: 1.5em 0em;
+  padding: 32px 0em;
   /* font-weight: regular; */
 }
 
@@ -313,6 +324,7 @@ summary {
   font-size: 1.4em;
   font-weight: 500;
   height: auto;
+  margin-bottom: 5px;
   /* padding: 100px; */
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -398,4 +410,73 @@ summary:after {
 #faq-image {
   width: 500px;
   margin: 30px auto;
+}
+.faq-content {
+  margin-top: 10px;
+}
+
+/* code for footer */
+
+.footer {
+  background: #000;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+#facebook:hover {
+  color: blue;
+}
+#instagram:hover {
+  color: violet;
+}
+#youtube:hover {
+  color: red;
+}
+#twitter:hover {
+  color: powderblue;
+}
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
 }

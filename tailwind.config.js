@@ -25,6 +25,7 @@ module.exports = {
         overlay: "#f2f3f6",
         cardColor: "#121212",
         cc: "#2f2f2f",
+        test: "#8695fa",
       },
       fontFamily: {
         interF: ["Inter"],
