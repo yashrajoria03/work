@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./index.html", "./pages/*.html"],
   theme: {
     screens: {
       sm: "480px",
@@ -30,9 +30,6 @@ module.exports = {
       fontFamily: {
         interF: ["Inter"],
         body: ["Merriweather"],
-      },
-      backgroundImage: {
-        "desktop-pattern": "url('/images/desk-pattern.svg')",
       },
     },
   },
