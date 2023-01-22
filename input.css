@@ -137,8 +137,8 @@ html {
   transition: border 0.1s ease;
 }
 .link:hover {
-  border-bottom: 2px solid #2600fe;
-  font-weight: 500;
+  border-bottom: 2px solid #01c0c4;
+  font-weight: 660;
 }
 
 /* .cards {
@@ -155,7 +155,7 @@ html {
   --orange: hsl(34, 97%, 64%);
   --blue: hsl(212, 86%, 64%);
   --varyDarkBlue: hsl(234, 12%, 34%);
-  --grayishBlue: hsl(229, 6%, 66%);
+  --grayishBlue: hsl(233, 7%, 76%);
   --veryLightGray: hsl(0, 0%, 98%);
   --weight1: 200;
   --weight2: 400;
@@ -215,6 +215,9 @@ h1:last-of-type {
   margin: 20px;
 }
 
+.box2 {
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+}
 .box-img {
   width: 50px;
   float: right;
@@ -477,3 +480,31 @@ summary:after {
     margin: 0% 3%;
   }
 }
+
+#intro {
+  background-image: url("../img/bg.png");
+  background-size: 1300px 700px;
+  background-repeat: no-repeat;
+  /* object-fit: contain; */
+}
+.navbarColor {
+  transition: all 0.1s ease;
+  background-color: white;
+  border-bottom: 1.2px solid rgb(216, 216, 216);
+}
+
+/* form */
+/* .color {
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  background-image: linear-gradient(
+    to bottom,
+    #0fcab2,
+    #00d2ac,
+    #00d9a3,
+    #00e097,
+    #1ee789
+  );
+}
+.form {
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+} */
