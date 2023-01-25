@@ -337,7 +337,7 @@ summary {
 }
 
 summary:hover {
-  color: blue;
+  color: #0fcab2;
 }
 
 details[open] summary ~ * {
@@ -356,11 +356,11 @@ details[open] summary ~ * {
 }
 
 details[open] summary {
-  color: blue;
+  color: #0fcab2;
 }
 
 details[open] p {
-  border-left: 2px solid blue;
+  border-left: 2px solid #0fcab2;
   margin-left: 55px;
   padding-left: 25px;
   opacity: 100;
@@ -397,7 +397,7 @@ summary:after {
   background: transparent;
   border-radius: 0.3em;
   content: "+";
-  color: blue;
+  color: #0fcab2;
   float: left;
   font-size: 1.8em;
   font-weight: bold;
@@ -418,7 +418,7 @@ summary:after {
 /* code for footer */
 
 .footer {
-  background: #000;
+  /* background: #000; */
   padding: 15px 0px;
   text-align: center;
 }
@@ -427,10 +427,10 @@ summary:after {
   width: 100%;
   margin: 1% 0%;
   padding: 0.6% 0%;
-  color: gray;
+  /* color: gray; */
   font-size: 0.8em;
 }
-#facebook:hover {
+#linkedin:hover {
   color: blue;
 }
 #instagram:hover {
@@ -444,7 +444,7 @@ summary:after {
 }
 .footer .row a {
   text-decoration: none;
-  color: gray;
+  /* color: gray; */
   transition: 0.5s;
 }
 

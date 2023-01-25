@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>About | Seedsnitch</title>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
 
@@ -58,23 +58,42 @@
       </div>
     </nav>
     <section
-      class="flex flex-col items-center gap-8 py-10 md:flex-row md:gap-16 md:py-20"
+      class="mx-auto container flex flex-col items-center mt-16 yellow gap-6 py-10 md:gap-16 md:pt-8"
     >
       <div
-        class="text-center w-full h-[50vh] mx-auto bg-[#cef5ee] flex flex-col items-center justify-center space-y-8"
+        class="flex flex-col items-center justify-evenly mt-4 space-y-4 md:space-x-4 md:flex-row md:px-6"
       >
-        <div class="w-[700px]">
-          <h2 class="font-bold text-[#f57456] text-[18px] pb-2">
-            ABOUT SEEDSNITCH
-          </h2>
-          <h2 class="text-5xl font-black text-[#242424]">
-            We are Supporting College Students in Launching Successful Business
-            Ventures
-          </h2>
+        <div class="container mx-auto w-1/2 px-2">
+          <h1
+            class="text-3xl font-bold text-center text-[#242424] md:leading-[3.4rem] w-full md:text-5xl md:text-left"
+          >
+            Supporting College Students in
+            <span class="text-[#0fcab2]">
+              Launching Successful Business Ventures</span
+            >
+          </h1>
+        </div>
+        <div class="container w-1/2 px-2 flex flex-row items-center">
+          <p
+            class="font-normal text-[16px] text-center md:text-left md:pt-24 italic md:pl-12 max-w-md"
+          >
+            Seedsnitch is a platform dedicated to helping college students
+            transform their ideas into successful ventures. we are here to
+            bridge the gap through guidance and resources essential to
+            overcoming them.
+          </p>
         </div>
       </div>
     </section>
-    <section class="gap-8 max-w-1/2 flex flex-row items-start">
+    <div class="w-full mx-auto flex flex-col items-center justify-center">
+      <img
+        src="../img/help.jpg"
+        class="hidden md:w-full md:max-w-full md:block items-start"
+        alt="we are seedsnitch"
+      />
+      <hr class="h-px w-2/3 my-4 bg-[#242424] border-0" />
+    </div>
+    <!-- <section class="gap-8 max-w-1/2 flex flex-row items-start">
       <div class="space-y-2 w-1/2">
         <h2 class="font-bold text-[#f57456] text-3xl text-center">
           Our Mission
@@ -97,14 +116,63 @@
           world.
         </p>
       </div>
+    </section> -->
+    <section
+      id="about2"
+      class="mx-auto container flex flex-col items-center gap-6 py-10 md:gap-16 md:pt-8"
+    >
+      <div
+        class="container mb-3 mx-auto flex flex-col items-center justify-center pb-10 mt-4 space-y-4 md:space-x-4 md:flex-row md:px-6"
+      >
+        <div class="container w-1/2 flex flex-row-reverse items-center">
+          <h1
+            class="text-3xl font-bold text-center text-[#242424] md:leading-[3.4rem] w-full md:text-5xl md:text-left"
+          >
+            Far beyond just a platform,
+            <span class="text-accent"> We are a community</span>
+          </h1>
+        </div>
+        <div class="container w-1/2 flex flex-row items-center italic">
+          <p
+            class="font-normal text-[16px] text-center md:text-left italic md:pl-12 max-w-md"
+          >
+            Our dedication to fostering the success of young entrepreneurs is
+            deeply rooted. We are passionate about helping young people succeed.
+            We offer a wide range of services to help startups succeed,
+            including seed funding and pre-seed fuasdsanding opportunities,
+            mentorship, and guidance from experienced entrepreneurs.
+          </p>
+        </div>
+      </div>
     </section>
+    <footer class="bg-[#0f6d6d] text-white py-2">
+      <div class="footer">
+        <div class="row">
+          <a href="#" id=""><i class="fab fa-linkedin"></i></a>
+          <a href="#" id="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
 
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <!-- <li><a href="#">Terms & Conditions</a></li> -->
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">Seedsnitch Copyright © 2023 All rights reserved</div>
+      </div>
+    </footer>
     <script>
       var x = document.getElementById("navbar");
       window.onscroll = function () {
         if (
-          document.body.scrollTop >= x.clientHeight ||
-          document.documentElement.scrollTop >= x.clientHeight
+          document.body.scrollTop >= x.clientHeight / 2 ||
+          document.documentElement.scrollTop >= x.clientHeight / 2
         ) {
           x.classList.add("navbarColor");
           // console.log("hello");
