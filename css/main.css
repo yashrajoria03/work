@@ -609,6 +609,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -627,6 +631,10 @@ video {
 
 .mt-16{
   margin-top: 4rem;
+}
+
+.mt-28{
+  margin-top: 7rem;
 }
 
 .mb-8{
@@ -661,10 +669,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-24{
-  margin-top: 6rem;
-}
-
 .block{
   display: block;
 }
@@ -679,6 +683,15 @@ video {
 
 .h-\[100vh\]{
   height: 100vh;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-px{
@@ -705,10 +718,6 @@ video {
   height: 66.666667%;
 }
 
-.h-auto{
-  height: auto;
-}
-
 .w-\[250px\]{
   width: 250px;
 }
@@ -719,6 +728,10 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .w-2\/3{
@@ -852,6 +865,12 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -874,6 +893,10 @@ video {
 
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .rounded{
@@ -931,6 +954,11 @@ video {
   background-color: rgb(12 105 128 / var(--tw-bg-opacity));
 }
 
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 211 175 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#0f6d6d\]{
   --tw-bg-opacity: 1;
   background-color: rgb(15 109 109 / var(--tw-bg-opacity));
@@ -949,11 +977,6 @@ video {
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-accent{
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 211 175 / var(--tw-bg-opacity));
 }
 
 .object-contain{
@@ -1007,6 +1030,11 @@ video {
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-10{
@@ -1070,17 +1098,17 @@ video {
   line-height: 1;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-\[20px\]{
   font-size: 20px;
 }
 
 .text-\[16px\]{
   font-size: 16px;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-2xl{
@@ -1640,6 +1668,10 @@ summary:after {
 
 .footer {
   /* background: #000; */
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* width: 100%; */
   padding: 10px 0px;
   text-align: center;
 }
@@ -1694,7 +1726,7 @@ summary:after {
 
 @media (max-width: 720px) {
   .footer {
-    text-align: left;
+    text-align: center;
     padding: 5%;
   }
 
