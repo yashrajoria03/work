@@ -23,7 +23,7 @@
   <!--  -->
   <!-- NavBar -->
   <nav
-    class="bg-transparent px-4 flex items-center justify-between pt-4 pb-4  mx-auto  fixed top-0 left-0 right-0 z-50 text-textBlue font-[600] navbar-fixed-bottom"
+    class="bg-transparent px-4 flex items-center justify-between pt-4 pb-4  mx-auto  fixed top-0 left-0 right-0 z-50 text-textBlue font-[600] "
     id="navbar">
     <div class="max-w-1/3">
       <a href="#">
@@ -64,7 +64,7 @@
     </div>
   </nav>
   <!-- Intro Section -->
-  <section id="intro" class=" h-[100vh] w-full overflow-hidden flex flex-col-reverse   justify-between mb-4 md:flex-row ">
+  <section id="intro" class="  hidden h-[100vh] w-full overflow-hidden md:flex  justify-between mb-4 flex-row ">
 
     <div class="w-1/2 space-y-8  ">
       <div class="container pt-7   max-w-md ml-16  text-white  text-5xl  font-[800] mt-40  " id="intro-text">
@@ -80,12 +80,12 @@
             More </button></a>
       </div>
     </div>
-    <div class="w-1/2 mt-16">
-      <img src="img/2.jpg" class="w-full h-auto" alt="">
+    <div class="w-1/2 flex flex-row items-center justify-center">
+      <img src="img/2.jpg" class="object-contain" alt="">
     </div>
   </section>
   <section id="intro2" class="w-screen h-fit mb-4 block md:hidden ">
-    <div class="w-full h-fit space-y-12 py-12  flex flex-col items-center justify-center  mt-28 rounded-xl">
+    <div class="w-full h-fit space-y-12 py-12  flex flex-col items-center justify-center  mt-28 rounded-xl z-10">
       <div class="container  text-center  text-accent  text-5xl  font-[800] " id="intro-text">
         <span class="">  Fueling the college startup revolution</span>
       </div>
@@ -98,7 +98,7 @@
             class="text-white bg-[#0C6980] rounded-md py-2 px-8 mt-4 text-[16px] hover:bg-[#084352]   ">Learn
             More </button></a>
       </div>
-      <img src="./img/cover.jpg" alt="">
+      <img src="./img/cover.jpg" class="-z-10 " id="index-img" alt="">
     </div>
     <!-- <div class="w-full mt-16">
       <img src="img/2.jpg" class="w-full h-auto" alt="">
@@ -106,7 +106,7 @@
   </section>
   
 
-  <footer class="bg-[#0f6d6d] text-white py-2">
+  <footer class="bg-[#0f6d6d] text-white py-2 static bottom-0 left-0 w-full">
     <div class="footer">
       <div class="row">
         <a href="#" id=""><i class="fab fa-linkedin"></i></a>

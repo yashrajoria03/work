@@ -521,6 +521,7 @@ main {
   max-width: 500px;
   margin: auto;
   position: relative;
+  padding: 0 5px;
 }
 
 main p {
@@ -604,4 +605,10 @@ main p:last-child {
   /* background-color: black; */
   width: 100%;
   padding: 50px 10px;
+}
+
+@media only screen and (max-width: 1170px) {
+  #index-img {
+    width: 200px;
+  }
 }
