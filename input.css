@@ -530,6 +530,7 @@ main p {
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
+  font-weight: 500;
   -o-border-image: linear-gradient(
     to right,
     #0fcab2,

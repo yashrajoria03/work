@@ -82,7 +82,7 @@
 
     <section id="faq">
       <div id="faq" class="faq-body">
-        <img src="../img/faq.jpg" id="faq-image" alt="" />
+        <img src="../img/faq.jpg" id="faq-image" class="md:pt-12" alt="" />
         <!-- <div class="faq-header">
           <h3 class="faq-title font-body">FAQ's</h3>
           <div class="seperator"></div>
@@ -90,9 +90,7 @@
         <div class="faq-list">
           <div>
             <details open>
-              <summary title="Is there a deadline to apply?">
-                Is there a deadline to apply?
-              </summary>
+              <summary>Is there a deadline to apply?</summary>
               <p class="faq-content">
                 We do not have a specific deadline to apply, and we accept
                 applications throughout the year. This means that you can apply
@@ -102,9 +100,7 @@
           </div>
           <div>
             <details>
-              <summary title="What are the eligibility criteria for applying?">
-                What are the eligibility criteria for applying?
-              </summary>
+              <summary>What are the eligibility criteria for applying?</summary>
               <p class="faq-content">
                 To apply, one must be a college student and have a startup idea.
                 This is the fundamental criterion by which we evaluate
@@ -116,11 +112,7 @@
           </div>
           <div>
             <details>
-              <summary
-                title="    What's the selection ratio for the application?"
-              >
-                What's the selection ratio for the application?
-              </summary>
+              <summary>What's the selection ratio for the application?</summary>
               <p class="faq-content">
                 Our selection ratio is quite high, meaning that if we see that
                 all the ideas have potential, we are ready to fund all of them.
@@ -131,10 +123,8 @@
           </div>
           <div>
             <details>
-              <summary
-                title="How much equity do you take on as the connecting platform?"
-              >
-                How much equity do you take on as the connecting platform?
+              <summary>
+                I am in the ideation stage with no product. Can I still apply?
               </summary>
               <p class="faq-content">
                 Yes, you can still apply even if you are in the ideation stage
@@ -146,9 +136,7 @@
           </div>
           <div>
             <details>
-              <summary
-                title="How much equity do you take on as the connecting platform?"
-              >
+              <summary>
                 How much equity do you take on as the connecting platform?
               </summary>
               <p class="faq-content">
@@ -161,10 +149,7 @@
           </div>
           <div>
             <details>
-              <summary
-                title="I have no background in running a business. Will that affect my application for shortlisting? 
-                  "
-              >
+              <summary>
                 Will lack of business experience affect my application
                 shortlisting?
               </summary>
@@ -179,10 +164,7 @@
           </div>
           <div>
             <details>
-              <summary
-                title="What is the cohort program run by Seedsnitch, and do you take any cohort fees?
-                  "
-              >
+              <summary>
                 What is the cohort program run by Seedsnitch, and do you take
                 any cohort fees?
               </summary>
@@ -224,8 +206,8 @@
       var x = document.getElementById("navbar");
       window.onscroll = function () {
         if (
-          document.body.scrollTop >= x.clientHeight ||
-          document.documentElement.scrollTop >= x.clientHeight
+          document.body.scrollTop >= x.clientHeight / 3 ||
+          document.documentElement.scrollTop >= x.clientHeight / 3
         ) {
           x.classList.add("navbarColor");
           // console.log("hello");
