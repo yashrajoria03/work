@@ -409,7 +409,23 @@ summary:after {
   text-align: center;
   width: 25px;
 }
-
+.card {
+  background-image: linear-gradient(
+    to right top,
+    #0fcab2,
+    #00c0c3,
+    #00b3cf,
+    #00a6d5,
+    #1797d3,
+    #2291cb,
+    #2a8cc2,
+    #2f86ba,
+    #0b87ad,
+    #04879e,
+    #20868e,
+    #36837e
+  );
+}
 #faq-image {
   width: 500px;
   margin: 30px auto;

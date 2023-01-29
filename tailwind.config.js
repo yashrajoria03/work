@@ -2,12 +2,12 @@
 module.exports = {
   content: ["./index.html", "./pages/*.html"],
   theme: {
-    screens: {
-      sm: "576px",
-      md: "768px",
-      lg: "992px",
-      lx: "1200px",
-    },
+    // screens: {
+    //   sm: "576px",
+    //   md: "768px",
+    //   lg: "992px",
+    //   lx: "1200px",
+    // },
     extend: {
       colors: {
         accent: "#01d3af",
