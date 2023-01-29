@@ -575,7 +575,7 @@ main p:before {
   content: counter(section);
   position: absolute;
   border-radius: 50%;
-  padding: 5px;
+  padding: 3px;
   height: 30px;
   width: 30px;
   background-color: #2b444e;
@@ -631,3 +631,9 @@ main p:last-child {
     width: 200px;
   }
 } */
+#more {
+  display: none;
+}
+#more2 {
+  display: none;
+}
