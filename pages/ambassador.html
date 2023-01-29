@@ -1,132 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>About | Seedsnitch</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/main.css" />
-  <title>seedsnitch</title>
-</head>
-
-<body class="bg-white">
-  <!--  -->
-  <!-- NavBar -->
-  <nav
-    class="bg-transparent px-4 flex items-center justify-between pt-4 pb-4  mx-auto  fixed top-0 left-0 right-0 z-50 text-textBlue font-[600]"
-    id="navbar">
-    <div class="max-w-1/3">
-      <a href="#">
-        <img src="img/logo-new.png" class="w-[250px]" alt="">
-      </a>
-    </div>
-    <div class="hidden container ml-36   flex-row items-center  justify-center space-x-8   md:flex max-w-1/3">
-      <a href="./pages/about.html" class="link ">About</a>
-      <a href="#" class="link  ">Resource</a>
-      <a href="./pages/contact.html" class="link  ">Contact</a>
-      <a href="./pages/faq.html" class="link  ">FAQ</a>
-    </div>
-    <!-- <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-      <span class="hamburger-top"></span>
-      <span class="hamburger-middle"></span>
-      <span class="hamburger-bottom"></span>
-    </button> -->
-    </div>
-
-    <!-- <div class="md:hidden">
-      <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold  sm:w-min-3xl sm:self-center px-8 right-6 drop-shadow-md bg-cardColor text-overlay">
-        <a href="#" id="projectLink" class="hover:text-darkGrayishBlue link">Projects</a>
-        <a href="#" class="hover:text-darkGrayishBlue link">About</a>
-        <a href="#" class="hover:text-darkGrayishBlue link">Contact</a>
-    </div> -->
-
-    <div class="max-w-1/3  hidden items-center justify-end pr-4  font-semibold button-effect space-x-4 md:flex">
-      <!-- <button class="rounded-md border border-black  px-4 py-1 text-center effect effect-5" id="button">Apply</button> -->
-      <button
-        class="cursor-pointer border-textBlue border flex  justify-center items-center font-medium rounded-md   hover:bg-accent text-textBlue  text-xs shrink-0 py-2 px-2 md:py-2 md:px-4 md:text-sm ">
-        Apply 
-      </button>
-      <button
-        class="cursor-pointer flex  justify-center items-center font-medium rounded-md  border bg-[#0C6980] text-white border-gray-500 hover:bg-[#084352] hover:text-white  text-xs shrink-0 py-2 px-3 md:py-2 md:px-6 md:text-sm ">
-        Become a ambassador
-      </button>
-    </div>
-  </nav>
-  <!-- Intro Section -->
-  <section id="intro" class=" h-[100vh] w-full overflow-hidden flex flex-row justify-between ">
-
-    <div class="w-1/2 space-y-8  ">
-      <div class="container pt-7   max-w-md ml-16  text-white  text-5xl  font-[800] mt-40  " id="intro-text">
-        <span>  Fueling the college startup revolution</span>
+  <body>
+    <nav
+      class="bg-transparent px-4 flex items-center justify-between pt-4 pb-4 mx-auto fixed top-0 left-0 right-0 z-50 text-textBlue font-[600]"
+      id="navbar"
+    >
+      <div class="max-w-1/3">
+        <a href="../index.html">
+          <img src="../img/logo-new.png" class="w-[250px]" alt="" />
+        </a>
       </div>
-      <!-- <div class="container pt-4  leading-slug max-w-md ml-16  text-medBlue  text-3xl  font-bold ">
-        Your one-stop destination for growth and success.
-
-      </div> -->
-      <div class="max-w-md text-medBlue font-bold  text-[20px] ml-16 ">
-        <p>We support college entrepreneurs
-          through   <br> mentorship, a cohort  program and <br>campus  representation.</p>
+      <div
+        class="hidden container ml-36 flex-row items-center justify-center space-x-8 md:flex max-w-1/3"
+      >
+        <a href="./about.html" class="link">About</a>
+        <a href="#" class="link">Resource</a>
+        <a href="./contact.html" class="link">Contact</a>
+        <a href="./faq.html" class="link">FAQ</a>
       </div>
-      <div>
-        <a href="./pages/about.html"> <button
-            class="text-white bg-[#0C6980] rounded-md py-2 px-8 mt-4 text-[16px] hover:bg-[#084352] ml-16  ">Learn
-            More </button></a>
+      <!-- <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+  <span class="hamburger-top"></span>
+  <span class="hamburger-middle"></span>
+  <span class="hamburger-bottom"></span>
+</button> -->
+      <!-- </div> -->
+
+      <!-- <div class="md:hidden">
+  <div id="menu"
+    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold  sm:w-min-3xl sm:self-center px-8 right-6 drop-shadow-md bg-cardColor text-overlay">
+    <a href="#" id="projectLink" class="hover:text-darkGrayishBlue link">Projects</a>
+    <a href="#" class="hover:text-darkGrayishBlue link">About</a>
+    <a href="#" class="hover:text-darkGrayishBlue link">Contact</a>
+</div> -->
+
+      <div
+        class="max-w-1/3 hidden items-center justify-end pr-4 font-semibold button-effect space-x-4 md:flex"
+      >
+        <!-- <button class="rounded-md border border-black  px-4 py-1 text-center effect effect-5" id="button">Apply</button> -->
+        <button
+          class="cursor-pointer border-textBlue border flex justify-center items-center font-medium rounded-md hover:bg-accent text-textBlue text-xs shrink-0 p-2 md:py-2 md:px-4 md:text-sm"
+        >
+          Apply
+        </button>
+        <button
+          class="cursor-pointer flex justify-center items-center font-medium rounded-md border bg-[#0C6980] text-white border-gray-500 hover:bg-[#084352] hover:text-white text-xs shrink-0 py-2 px-3 md:py-2 md:px-6 md:text-sm"
+        >
+          Become a ambassador
+        </button>
       </div>
-    </div>
-    <div class="w-1/2 mt-16">
-      <img src="img/2.jpg" class="w-full" alt="">
-    </div>
-  </section>
+    </nav>
+    <section id="ambassador">
+      <div
+        class="px-6 md:px-36 mx-auto flex flex-col-reverse items-center justify-center md:flex-row mt-24 text-[#242424]"
+      >
+        <div
+          class="w-full h-auto flex flex-col items-center justify-center md:w-1/2"
+        >
+          <h1 class="text-center text-5xl md:text-8xl font-semibold py-5">
+            Become an <span class="text-accent"> Ambassador</span>
+          </h1>
 
-  <footer class="bg-[#0f6d6d] text-white py-2">
-    <div class="footer">
-      <div class="row">
-        <a href="#" id=""><i class="fab fa-linkedin"></i></a>
-        <a href="#" id="instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
-        <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+          <p class="mt-4 text-center text-3xl md:max-w-2xl">
+            Join the seedsnitch ambassador program and become a superhero
+            sidekick that help peers turn ideas into startups and also earn
+            exciting rewards for each referral..
+          </p>
+        </div>
+        <div class="w-full flex flex-row items-end justify-center md:w-1/2">
+          <img
+            src="../img/ambass.png"
+            alt=""
+            class="w-[600px] object-cover min-w-[400px]"
+          />
+        </div>
       </div>
-
-      <div class="row">
-        <ul>
-          <li><a href="./contact.html">Contact us</a></li>
-          <li><a href="./about.html">About us</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <!-- <li><a href="#">Terms & Conditions</a></li> -->
-          <li><a href="#">Career</a></li>
-        </ul>
+    </section>
+    <section>
+      <div
+        class="w-full md:w-[1500px] mx-auto my-6 px-4 md:px-12 flex flex-col md:flex-row"
+      >
+        <div class="w-full md:w-1/2 border border-[#242424] p-4 md:p-10">
+          <h1
+            class="text-center text-4xl md:text-5xl font-semibold py-5 text-[#242424]"
+          >
+            What is it about?
+          </h1>
+          <p class="mt-4 text-left text-2xl italic md:font-normal font-thin">
+            Welcome to the Seedsnitch Campus Ambassador Program, where we turn
+            boring college students into cool startup ambassadors. As a campus
+            ambassador, you'll have the opportunity to spread the word about
+            Seedsnitch and all the awesome resources we offer to help college
+            students turn their ideas into successful businesses. Imagine being
+            able to say, "I'm a startup ambassador," at parties or on a first
+            date. It's a conversation starter, trust us. But it's not just about
+            impressing your friends; it's also about making a real impact on
+            your campus. You'll have the opportunity to help identify and
+            recruit the next generation of college startup founders, and in
+            return, you'll get to be part of a community of like-minded
+            individuals who are also on the journey of building their own
+            startups, gain valuable experience in the startup world, and earn
+            some extra money (you were finding that, weren't you?). Think of it
+            as a referral program: the more members you bring in, the more
+            rewards you earn.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 border border-[#242424] p-4 md:p-10">
+          <h1
+            class="text-center text-4xl md:text-5xl font-semibold py-5 text-[#242424]"
+          >
+            How does this work?
+          </h1>
+          <p class="mt-4 text-left text-2xl font-light md:font-normal">
+            You apply for the program, and if we love your application (and
+            let's face it, who wouldn't love you? ), we'll give you a call and
+            invite you to join our squad. Your responsibilities as a campus
+            ambassador are simple: Make your peers aware of Seedsnitch and find
+            those hidden gems: the students on your campus who have a burning
+            passion to start a business but just need a little push. And that's
+            where we come in. We're here to be the support system for all those
+            college students who have big dreams and the drive to make them a
+            reality. We're not in it for the money; we're in it for the passion.
+            If you bring us a startup idea that has potential and gets funded,
+            you'll get a cut of the deal. So, the more potential ideas you bring
+            in, the more money you can make. But you might be thinking, "How do
+            I identify a potential idea?" The answer is simple: Trust your gut.
+            If something sounds too good, it probably is. But if it sounds like
+            the next big thing and you're thinking "Oh my god, this is it!" then
+            it probably is.
+          </p>
+        </div>
       </div>
+    </section>
+    <!-- <footer class="bg-[#0f6d6d] text-white py-2 mt-[100vh]">
+      <div class="footer">
+        <div class="row">
+          <a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="#" id="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
 
-      <div class="row">
-        Seedsnitch Copyright © 2023 All rights reserved
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">Seedsnitch Copyright © 2023 All rights reserved</div>
       </div>
-    </div>
-  </footer>
-
-<script>
-  var x=document.getElementById("navbar");
-  window.onscroll=function(){
-    if (document.body.scrollTop >= x.clientHeight||document.documentElement.scrollTop >= x.clientHeight ) {
-        x.classList.add("navbarColor");
-        // console.log("hello");
-        // x.remove("nav-transparent");
-      } 
-      else {
-        x.classList.remove("navbarColor");
-    }
-  }
-</script>
-</body>
-
+    </footer> -->
+    <script>
+      var x = document.getElementById("navbar");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop >= x.clientHeight / 2 ||
+          document.documentElement.scrollTop >= x.clientHeight / 2
+        ) {
+          x.classList.add("navbarColor");
+          // console.log("hello");
+          // x.remove("nav-transparent");
+        } else {
+          x.classList.remove("navbarColor");
+        }
+      };
+    </script>
+  </body>
 </html>
