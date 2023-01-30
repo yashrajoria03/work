@@ -536,7 +536,7 @@ summary:after {
 
 main {
   min-width: 300px;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   position: relative;
   padding: 0 5px;
@@ -566,7 +566,7 @@ main p {
   border-image-slice: 1;
   /* border-width: 2px; */
   margin: 0;
-  padding: 40px;
+  padding: 20px 20px;
   counter-increment: section;
   position: relative;
   color: #34435e;

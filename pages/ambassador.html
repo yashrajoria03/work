@@ -90,7 +90,7 @@
       >
         <div class="w-full md:w-[800px] text-center">
           <h2
-            class="md:font-black font-bold text-4xl md:text-5xl pb-2 text-accent"
+            class="md:font-extrabold font-bold text-4xl md:text-5xl pb-2 text-accent"
           >
             <!-- text-[#f57456] -->
             <span class="text-[#242424]"> Become an </span>ambassador
@@ -109,7 +109,7 @@
       <div
         class="py-4 text-center w-full h-full mx-auto flex flex-col items-center justify-start container"
       >
-        <div class="w-full p-4 flex flex-row justify-evenly items-center">
+        <div class="w-full p-4 flex flex-row justify-evenly items-center my-4">
           <div class="hidden md:flex flex-row justify-center w-1/2">
             <img
               src="../img/ambass2.jpg"
@@ -121,16 +121,16 @@
             class="container md:w-1/2 w-full flex flex-col items-center md:items-start justify-center px-12 space-y-3"
           >
             <h1
-              class="md:font-black font-semibold text-4xl md:text-5xl pb-2 text-accent"
+              class="md:font-black font-semibold text-4xl md:text-5xl pb-2 text-accent text-center w-full"
             >
               What is it about?
             </h1>
             <img
               src="../img/ambass2.jpg"
-              class="block w-[200px] md:hidden"
+              class="block w-[180px] md:hidden"
               alt=""
             />
-            <p class="text-center text-[20px] font-normal md:text-left">
+            <p class="text-center text-[20px] font-normal w-full">
               Welcome to the Seedsnitch Campus Ambassador Program, where we turn
               boring college students into cool startup ambassadors. As a campus
               ambassador, you'll have the opportunity to spread the word about
@@ -157,7 +157,7 @@
               <br /><button
                 onclick="myFunction()"
                 id="myBtn"
-                class="bg-[#242424] p-1 text-white text-[18px] my-2"
+                class="rounded-md border bg-[#0C6980] text-white p-1 text-[18px] my-2 py-2"
               >
                 Read more
               </button>
@@ -166,7 +166,7 @@
         </div>
 
         <div
-          class="w-full p-4 flex flex-row-reverse justify-evenly items-center"
+          class="w-full p-4 flex flex-row-reverse justify-evenly items-center my-8"
         >
           <div class="hidden md:flex flex-row justify-end w-1/2">
             <img src="../img/img2.jpg" class="w-[700px] object-left" alt="" />
@@ -175,7 +175,7 @@
             class="container md:w-1/2 w-full flex flex-col items-center md:items-start md:pl-28 justify-center px-12 space-y-3"
           >
             <h1
-              class="md:font-black font-semibold text-4xl md:text-5xl pb-2 text-accent"
+              class="md:font-extrabold font-semibold text-4xl md:text-5xl pb-2 text-accent text-center w-full"
             >
               How does this work?
             </h1>
@@ -184,14 +184,13 @@
               class="block w-[200px] md:hidden"
               alt=""
             />
-            <p class="text-center text-[20px] font-normal md:text-left">
-              You apply for the program, and if we love your application (and
-              let's face it, who wouldn't love you? ), we'll give you a call and
-              invite you to join our squad. Your responsibilities as a campus
-              ambassador are simple: Make your peers aware of Seedsnitch and
-              find those hidden gems: the students on your campus who have a
-              burning passion to start a business but just need a little push.
-              And that's where we come in.
+            <p class="text-center text-[20px] font-normal w-full">
+              You apply for the program and if we love your application,we'll
+              give you a call and invite you to join our squad. Your
+              responsibilities as a campus ambassador are simple: Make your
+              peers aware of Seedsnitch and find those hidden gems: the students
+              on your campus who have a burning passion to start a business but
+              just need a little push. And that's where we come in.
               <span id="dots2">...</span>
               <span id="more2">
                 We're here to be the support system for all those college
@@ -210,7 +209,7 @@
               <button
                 onclick="myFunction2()"
                 id="myBtn2"
-                class="bg-[#242424] p-1 text-white text-[18px] my-2"
+                class="rounded-md border bg-[#0C6980] text-white p-1 text-[18px] my-2 py-2"
               >
                 Read more
               </button>
@@ -220,300 +219,222 @@
       </div>
     </section>
 
-    <!-- <section id="ambassador">
+    <section id="about-container" class="">
       <div
-        class="px-6 mx-auto flex flex-col-reverse items-center justify-center md:flex-row md:justify-between mt-24 text-[#242424]"
+        class="h-full w-full flex flex-col gap-4 justify-between items-center space-y-8 p-4"
       >
-        <div
-          class="w-full h-auto flex flex-col items-center justify-center md:w-1/2"
+        <h2
+          class="md:font-extrabold font-bold text-4xl md:text-5xl text-accent"
         >
-          <h1 class="text-center font-black text-5xl py-5">
-            Become an <span class="text-accent"> Ambassador</span>
-          </h1>
+          <span class="text-[#242424]"> Tell us about&nbsp;</span>yourself
+        </h2>
+        <div
+          class="w-full md:w-[600px] h-full rounded-md mx-auto form border-t border-t-gray-100 px-4"
+        >
+          <form class="w-full h-full max-w-2xl px-4 py-6">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-name"
+                >
+                  Name
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-name"
+                  type="text"
+                  required
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-email"
+                >
+                  Email
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-email"
+                  type="email"
+                  required
+                  placeholder="Enter your email id"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-startname"
+                >
+                  Startup name
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-startname"
+                  type="text"
+                  required
+                  placeholder="Subject"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-linkedin"
+                >
+                  Linkedin profile
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-name"
+                  type="url"
+                  placeholder="Your linkedin profile"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-college"
+                >
+                  College
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-name"
+                  required
+                  type="text"
+                  placeholder="College name"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-date"
+                >
+                  Year of Graduation
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-date"
+                  required
+                  type="date"
+                />
+              </div>
+            </div>
+            <hr class="mb-6" />
+            <div class="flex flex-wrap -mx-3 mb-2 mt-8">
+              <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-desc"
+                >
+                  Describe your startup?
+                </label>
+                <textarea
+                  class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-desc"
+                  placeholder="Tell us about your startup..."
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-2 mt-8">
+              <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-prob"
+                >
+                  What is the problem you are trying to solve with your startup?
+                </label>
+                <textarea
+                  class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-prob"
+                  placeholder="Problem statement"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-2 mt-8">
+              <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-desc"
+                >
+                  Describe your startup?
+                </label>
+                <textarea
+                  class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-desc"
+                  placeholder="Tell us about your startup..."
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-stage"
+                >
+                  What is the current status of your startup (ideation,
+                  early-stage)?
+                </label>
+                <input
+                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-stage"
+                  required
+                  type="text"
+                  placeholder="Current status of startup"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-2 mt-8">
+              <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  for="grid-diff"
+                >
+                  How does your startup differentiate itself from similar
+                  products (if any)?
+                </label>
+                <textarea
+                  class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-diff"
+                  placeholder="What stands you apart?"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+            </div>
 
-          <p class="mt-4 text-center text-3xl md:max-w-2xl"></p>
-        </div>
-        <div class="w-full flex flex-row items-end justify-center md:w-1/2">
-          <img
-            src="../img/ambass.png"
-            alt=""
-            class="w-[600px] object-contain min-w-[400px]"
-          />
+            <div class="w-full">
+              <div class="w-full flex flex-row items-center">
+                <button
+                  class="shadow color focus:shadow-outline focus:outline-none text-white font-semibold px-3 py-2 rounded w-full bg-accent hover:bg-[#37a697]"
+                  type="button"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
-    <section>
-      <div
-        class="w-full md:w-[1500px] mx-auto my-6 px-4 md:px-12 flex flex-col md:flex-row"
-      >
-        <div class="w-full md:w-1/2 border border-[#242424] p-4 md:p-10">
-          <h1
-            class="text-center text-4xl md:text-5xl font-semibold py-5 text-[#242424]"
-          >
-            What is it about?
-          </h1>
-          <p class="mt-4 text-left text-2xl italic md:font-normal font-thin">
-            Welcome to the Seedsnitch Campus Ambassador Program, where we turn
-            boring college students into cool startup ambassadors. As a campus
-            ambassador, you'll have the opportunity to spread the word about
-            Seedsnitch and all the awesome resources we offer to help college
-            students turn their ideas into successful businesses. Imagine being
-            able to say, "I'm a startup ambassador," at parties or on a first
-            date. It's a conversation starter, trust us. But it's not just about
-            impressing your friends; it's also about making a real impact on
-            your campus. You'll have the opportunity to help identify and
-            recruit the next generation of college startup founders, and in
-            return, you'll get to be part of a community of like-minded
-            individuals who are also on the journey of building their own
-            startups, gain valuable experience in the startup world, and earn
-            some extra money (you were finding that, weren't you?). Think of it
-            as a referral program: the more members you bring in, the more
-            rewards you earn.
-          </p>
-        </div>
-        <div class="w-full md:w-1/2 border border-[#242424] p-4 md:p-10">
-          <h1
-            class="text-center text-4xl md:text-5xl font-semibold py-5 text-[#242424]"
-          >
-            How does this work?
-          </h1>
-          <p class="mt-4 text-left text-2xl font-light md:font-normal">
-            You apply for the program, and if we love your application (and
-            let's face it, who wouldn't love you? ), we'll give you a call and
-            invite you to join our squad. Your responsibilities as a campus
-            ambassador are simple: Make your peers aware of Seedsnitch and find
-            those hidden gems: the students on your campus who have a burning
-            passion to start a business but just need a little push. And that's
-            where we come in. We're here to be the support system for all those
-            college students who have big dreams and the drive to make them a
-            reality. We're not in it for the money; we're in it for the passion.
-            If you bring us a startup idea that has potential and gets funded,
-            you'll get a cut of the deal. So, the more potential ideas you bring
-            in, the more money you can make. But you might be thinking, "How do
-            I identify a potential idea?" The answer is simple: Trust your gut.
-            If something sounds too good, it probably is. But if it sounds like
-            the next big thing and you're thinking "Oh my god, this is it!" then
-            it probably is.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <section
-        id="about-container"
-        class="h-auto px-2 relative mb-12 md:mt-0 mt-12"
-      >
-        <div
-          class="h-full w-full flex flex-col gap-4 justify-between md:flex-row"
-        >
-          <div
-            class="w-[600px] h-full rounded-md backdrop-blur-md mx-auto form border-t border-t-gray-200"
-          >
-            <form class="w-full h-full max-w-2xl px-4 py-6">
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-name"
-                  >
-                    Name
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-name"
-                    type="text"
-                    required
-                    placeholder="Name"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-email"
-                    type="email"
-                    required
-                    placeholder="Enter your email id"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-startname"
-                  >
-                    Startup name
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-startname"
-                    type="text"
-                    required
-                    placeholder="Subject"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-linkedin"
-                  >
-                    Linkedin profile
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-name"
-                    type="url"
-                    placeholder="Your linkedin profile"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-college"
-                  >
-                    College
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-name"
-                    required
-                    type="text"
-                    placeholder="College name"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-date"
-                  >
-                    Year of Graduation
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-date"
-                    required
-                    type="date"
-                  />
-                </div>
-              </div>
-              <hr class="mb-6" />
-              <div class="flex flex-wrap -mx-3 mb-2 mt-8">
-                <div class="w-full md:w-full px-3 mb-6 md:mb-0">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-desc"
-                  >
-                    Describe your startup?
-                  </label>
-                  <textarea
-                    class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-desc"
-                    placeholder="Tell us about your startup..."
-                    rows="7"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-2 mt-8">
-                <div class="w-full md:w-full px-3 mb-6 md:mb-0">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-prob"
-                  >
-                    What is the problem you are trying to solve with your
-                    startup?
-                  </label>
-                  <textarea
-                    class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-prob"
-                    placeholder="Problem statement"
-                    rows="7"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-2 mt-8">
-                <div class="w-full md:w-full px-3 mb-6 md:mb-0">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-desc"
-                  >
-                    Describe your startup?
-                  </label>
-                  <textarea
-                    class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-desc"
-                    placeholder="Tell us about your startup..."
-                    rows="7"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-stage"
-                  >
-                    What is the current status of your startup (ideation,
-                    early-stage)?
-                  </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-stage"
-                    type="text"
-                    placeholder="Current status of startup"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-2 mt-8">
-                <div class="w-full md:w-full px-3 mb-6 md:mb-0">
-                  <label
-                    class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                    for="grid-diff"
-                  >
-                    How does your startup differentiate itself from similar
-                    products (if any)?
-                  </label>
-                  <textarea
-                    class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-diff"
-                    placeholder="What stands you apart?"
-                    rows="7"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="w-full">
-                <div class="w-full flex flex-row items-center">
-                  <button
-                    class="shadow color focus:shadow-outline focus:outline-none text-white font-semibold px-3 py-2 rounded w-full bg-accent hover:bg-[#37a697]"
-                    type="button"
-                  >
-                    Send
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </section> -->
     <!-- <footer class="bg-[#0f6d6d] text-white py-2 mt-[100vh]">
       <div class="footer">
         <div class="row">
