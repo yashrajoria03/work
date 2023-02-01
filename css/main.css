@@ -2069,6 +2069,10 @@ main p:last-child {
 }
 
 @media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
   .md\:top-0{
     top: 0px;
   }
@@ -2093,6 +2097,10 @@ main p:last-child {
     display: none;
   }
 
+  .md\:h-\[590px\]{
+    height: 590px;
+  }
+
   .md\:w-full{
     width: 100%;
   }
@@ -2109,6 +2117,10 @@ main p:last-child {
     width: 600px;
   }
 
+  .md\:w-\[400px\]{
+    width: 400px;
+  }
+
   .md\:max-w-md{
     max-width: 28rem;
   }
@@ -2123,6 +2135,10 @@ main p:last-child {
 
   .md\:items-start{
     align-items: flex-start;
+  }
+
+  .md\:items-center{
+    align-items: center;
   }
 
   .md\:gap-16{
