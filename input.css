@@ -637,3 +637,7 @@ main p:last-child {
 #more2 {
   display: none;
 }
+
+#about-container {
+  background-image: url("./img/pou.jpg");
+}
