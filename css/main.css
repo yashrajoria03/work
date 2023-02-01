@@ -2024,7 +2024,7 @@ main p:last-child {
 }
 
 #about-container div {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .hover\:bg-accent:hover{

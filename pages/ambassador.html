@@ -176,14 +176,14 @@
       </div>
     </section>
 
-    <section id="about-container" class="">
+    <section>
       <div
         class="h-full w-full flex flex-col gap-4 justify-between items-center space-y-8 p-4"
       >
         <h2
           class="md:font-extrabold font-bold text-4xl md:text-5xl text-accent"
         >
-          <span class="text-[#242424]"> Tell us about&nbsp;</span>yourself
+          <span class="text-[#242424]"> Join our&nbsp;</span>Mission
         </h2>
         <div
           class="w-full md:w-[600px] h-full rounded-md mx-auto form border-t border-t-gray-100 px-4"
@@ -224,23 +224,6 @@
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full md:w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                  for="grid-startname"
-                >
-                  Startup name
-                </label>
-                <input
-                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-startname"
-                  type="text"
-                  required
-                  placeholder="Subject"
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
                 <label
                   class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
@@ -256,53 +239,19 @@
                 />
               </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                  for="grid-college"
-                >
-                  College
-                </label>
-                <input
-                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-name"
-                  required
-                  type="text"
-                  placeholder="College name"
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                  for="grid-date"
-                >
-                  Year of Graduation
-                </label>
-                <input
-                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-date"
-                  required
-                  placeholder="YYYY"
-                  type="text"
-                />
-              </div>
-            </div>
-            <hr class="mb-6" />
             <div class="flex flex-wrap -mx-3 mb-2 mt-8">
               <div class="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
                   class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                  for="grid-desc"
+                  for="grid-plan"
                 >
-                  Describe your startup?
+                  How do you plan to network with startup founders or those in
+                  the ideation stage at your college?
                 </label>
                 <textarea
                   class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-desc"
-                  placeholder="Tell us about your startup..."
+                  id="grid-plan"
+                  placeholder="Describe your approach here..."
                   rows="7"
                   required
                 ></textarea>
@@ -314,12 +263,14 @@
                   class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-prob"
                 >
-                  What is the problem you are trying to solve with your startup?
+                  Do you know people who are working on a startup idea, and you
+                  think we can help them? If so, drop their LinkedIn profile.
+                  Remember, you get rewarded if we help them scale.
                 </label>
                 <textarea
                   class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-prob"
-                  placeholder="Problem statement"
+                  placeholder="Drop their linkedin profiles here..."
                   rows="7"
                   required
                 ></textarea>
@@ -331,54 +282,17 @@
                   class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-desc"
                 >
-                  Describe your startup?
+                  Is there anything you want to tell us about yourself?
                 </label>
                 <textarea
                   class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-desc"
-                  placeholder="Tell us about your startup..."
+                  placeholder="Tell us about yourself..."
                   rows="7"
                   required
                 ></textarea>
               </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                  for="grid-stage"
-                >
-                  What is the current status of your startup (ideation,
-                  early-stage)?
-                </label>
-                <input
-                  class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-stage"
-                  required
-                  type="text"
-                  placeholder="Current status of startup"
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-2 mt-8">
-              <div class="w-full md:w-full px-3 mb-6 md:mb-0">
-                <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
-                  for="grid-diff"
-                >
-                  How does your startup differentiate itself from similar
-                  products (if any)?
-                </label>
-                <textarea
-                  class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-diff"
-                  placeholder="What stands you apart?"
-                  rows="7"
-                  required
-                ></textarea>
-              </div>
-            </div>
-
             <div class="w-full">
               <div class="w-full flex flex-row items-center">
                 <button
