@@ -601,10 +601,6 @@ video {
   right: -16rem;
 }
 
-.-top-4{
-  top: -1rem;
-}
-
 .right-4{
   right: 1rem;
 }
@@ -824,10 +820,6 @@ video {
 
 .shrink-0{
   flex-shrink: 0;
-}
-
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -1202,11 +1194,6 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-\[600\]{
@@ -2003,7 +1990,7 @@ main p:last-child {
 #about-container {
   /* height: 100vh; */
   padding: 10px 0;
-  background-image: url("./img/pou.jpg");
+  background-image: url("../img/pou.jpg");
   background-size: 100% 100%;
   -o-object-fit: fill;
      object-fit: fill;
@@ -2069,18 +2056,6 @@ main p:last-child {
 
   .md\:mt-0{
     margin-top: 0px;
-  }
-
-  .md\:mr-12{
-    margin-right: 3rem;
-  }
-
-  .md\:mr-14{
-    margin-right: 3.5rem;
-  }
-
-  .md\:mr-16{
-    margin-right: 4rem;
   }
 
   .md\:block{
@@ -2180,13 +2155,12 @@ main p:last-child {
     padding-right: 0.75rem;
   }
 
-  .md\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .md\:pt-8{
     padding-top: 2rem;
+  }
+
+  .md\:pr-28{
+    padding-right: 7rem;
   }
 
   .md\:pl-14{
@@ -2203,30 +2177,6 @@ main p:last-child {
 
   .md\:pt-12{
     padding-top: 3rem;
-  }
-
-  .md\:pr-10{
-    padding-right: 2.5rem;
-  }
-
-  .md\:pr-12{
-    padding-right: 3rem;
-  }
-
-  .md\:pr-20{
-    padding-right: 5rem;
-  }
-
-  .md\:pr-32{
-    padding-right: 8rem;
-  }
-
-  .md\:pr-36{
-    padding-right: 9rem;
-  }
-
-  .md\:pr-28{
-    padding-right: 7rem;
   }
 
   .md\:text-sm{
