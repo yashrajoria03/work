@@ -24,6 +24,7 @@ module.exports = {
       fontFamily: {
         interF: ["Inter"],
         body: ["Merriweather"],
+        title: ["Teko"],
       },
     },
   },
