@@ -293,112 +293,66 @@ h2 {
   margin: 0 auto;
 }
 
-.faq-title {
-  font-size: 2em;
-  margin: 0.4em 0;
-  text-align: center;
-}
-
-.seperator {
-  width: 7.5em;
-  background-color: blue;
-  height: 0.17em;
+.container {
+  max-width: 970px;
   margin: 0 auto;
 }
 
-.faq-list > div {
-  border-bottom: 0.07em solid #ededed;
-  padding: 32px 0em;
-  /* font-weight: regular; */
+.faq-heading {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
 }
 
-.faq-list > div:last-child {
-  border: unset;
+.faq-card {
+  border: 1px solid #dce0e8;
+  border-radius: 6px;
+  padding: 24px 20px;
+  margin-bottom: 12px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-open-icon {
+  font-size: 22px;
+  position: absolute;
+  margin-left: 10px;
+  top: 18px;
+  right: 24px;
+  font-weight: 700;
+}
+
+details[open] .faq-open-icon {
+  top: 18px;
+  right: 24px;
 }
 
 details > summary {
   list-style: none;
 }
+
 details > summary::-webkit-details-marker {
   display: none;
 }
 
-summary {
-  font-size: 1.4em;
-  font-weight: 500;
-  height: auto;
-  margin-bottom: 5px;
-  /* padding: 100px; */
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  transition: all 0.3s ease;
-}
-
-summary:hover {
-  color: #0fcab2;
-}
-
-details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
-}
-
-@keyframes sweep {
-  0% {
-    opacity: 0;
-    margin-left: -10px;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 55px;
-  }
-}
-
 details[open] summary {
   color: #0fcab2;
+  font-weight: 500;
 }
 
-details[open] p {
-  border-left: 2px solid #0fcab2;
-  margin-left: 55px;
-  padding-left: 25px;
-  opacity: 100;
-  transition: all 3s ease;
+details[open] .faq-card-spoiler {
+  display: inline-block;
+  padding-top: 8px;
+  color: #8b8b9a;
 }
 
-details[open] summary:after {
-  content: "-";
-  font-size: 3.2em;
-  margin: -32px 0.5em 0 0;
-  font-weight: 200;
-}
-
-.faq-list {
-  width: 55em;
-  margin: 1em auto;
-  padding: 2em 0;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary:after {
-  background: transparent;
-  border-radius: 0.3em;
-  content: "+";
-  color: #0fcab2;
-  float: left;
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: -0.3em 0.65em 0 0;
-  padding: 0;
+.faq-aftertext {
   text-align: center;
-  width: 25px;
+  margin-right: 10px;
+  color: #8b8b9a;
 }
 .card {
   background-image: linear-gradient(
