@@ -46,6 +46,7 @@ html {
   height: 24px;
   transition: all 0.25s;
   position: relative;
+  /* background: #000; */
 }
 
 .hamburger-top,
@@ -53,7 +54,7 @@ html {
 .hamburger-bottom {
   position: absolute;
   top: 0;
-  left: 80px;
+  left: 0px;
   width: 24px;
   height: 2px;
   background: #000;

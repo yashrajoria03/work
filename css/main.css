@@ -1027,6 +1027,11 @@ video {
   background-color: rgb(15 109 109 / var(--tw-bg-opacity));
 }
 
+.bg-slate-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#242424\]{
   --tw-bg-opacity: 1;
   background-color: rgb(36 36 36 / var(--tw-bg-opacity));
@@ -1401,6 +1406,7 @@ html {
   height: 24px;
   transition: all 0.25s;
   position: relative;
+  /* background: #000; */
 }
 
 .hamburger-top,
@@ -1408,7 +1414,7 @@ html {
 .hamburger-bottom {
   position: absolute;
   top: 0;
-  left: 80px;
+  left: 0px;
   width: 24px;
   height: 2px;
   background: #000;
