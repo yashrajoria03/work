@@ -702,10 +702,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-28{
-  margin-bottom: 7rem;
-}
-
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -1913,17 +1909,22 @@ main p:last-child {
   display: none;
 }
 
-#about-container {
-  /* height: 100vh; */
-  padding: 10px 0;
-  background-image: url("../img/pou.jpg");
-  background-size: 100% 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
+@media (min-width: 768px) {
+  #about-container {
+    padding: 10px 0;
+    background-image: url("../img/pou.jpg");
+    background-size: 100% 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
 
-#about-container div {
-  background: rgba(255, 255, 255, 0.85);
+  #about-container div {
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  #about-container form {
+    box-shadow: 10px 30px 40px -20px var(--grayishBlue);
+  }
 }
 
 input::-webkit-outer-spin-button,
@@ -1996,6 +1997,10 @@ input[type="number"] {
 
   .md\:mt-0{
     margin-top: 0px;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
   }
 
   .md\:block{
