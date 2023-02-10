@@ -537,6 +537,9 @@ main p:last-child {
   #about-container form {
     box-shadow: 10px 30px 40px -20px var(--grayishBlue);
   }
+  #contact-form {
+    box-shadow: 10px 15px 40px -20px var(--grayishBlue);
+  }
 }
 
 input::-webkit-outer-spin-button,

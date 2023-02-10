@@ -706,8 +706,8 @@ video {
   margin-bottom: 5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .block{
@@ -1339,12 +1339,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.backdrop-blur-md{
-  --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 a {
   transition: 0.5ms ease-in;
 }
@@ -1925,6 +1919,10 @@ main p:last-child {
   #about-container form {
     box-shadow: 10px 30px 40px -20px var(--grayishBlue);
   }
+
+  #contact-form {
+    box-shadow: 10px 15px 40px -20px var(--grayishBlue);
+  }
 }
 
 input::-webkit-outer-spin-button,
@@ -2001,6 +1999,10 @@ input[type="number"] {
 
   .md\:mt-8{
     margin-top: 2rem;
+  }
+
+  .md\:mb-16{
+    margin-bottom: 4rem;
   }
 
   .md\:block{
@@ -2093,11 +2095,6 @@ input[type="number"] {
   .md\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .md\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 
   .md\:pl-20{
