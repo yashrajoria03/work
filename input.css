@@ -554,3 +554,39 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.course-col h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.course-col p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  padding: 5px;
+}
+.index-row {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background-color: #befcf35e;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 15px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.course-col h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
