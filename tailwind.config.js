@@ -25,6 +25,7 @@ module.exports = {
         interF: ["Inter"],
         body: ["Merriweather"],
         title: ["Teko"],
+        pop: ["Poppins"],
       },
     },
   },
