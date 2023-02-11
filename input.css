@@ -7,6 +7,18 @@
 a {
   transition: 0.5ms ease-in;
 }
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -284,6 +296,7 @@ details[open] .faq-open-icon {
 
 details > summary {
   list-style: none;
+  padding-right: 10%;
 }
 
 details > summary::-webkit-details-marker {
@@ -576,6 +589,7 @@ input[type="number"] {
 .course-col {
   flex-basis: 31%;
   background-color: #befcf35e;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 15px 12px;
@@ -590,4 +604,16 @@ input[type="number"] {
 }
 .course-col:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  border-top: 3px solid var(--orange);
 }
