@@ -100,10 +100,10 @@
     </nav>
 
     <section
-      class="mt-20 gap-x-8 h-[auto] md:flex-row px-4 md:px-0 md:gap-x-16 bg-[#f8f8f8] w-full border border-b-slate-200"
+      class="mt-20 gap-x-8 h-auto md:flex-row px-4 md:px-0 md:gap-x-16 bg-[#f8f8f8] w-full border border-b-slate-200"
     >
       <div
-        class="text-center md:w-1/2 w-full h-full mx-auto flex flex-col items-center justify-start md:py-12"
+        class="text-center w-full h-full mx-auto flex flex-col items-center justify-start md:w-1/2 md:py-12"
       >
         <div class="w-full md:w-[800px] text-center p-4 md:p-2">
           <h2
@@ -111,7 +111,7 @@
           >
             <span class="text-[#242424]"> Become an </span>ambassador
           </h2>
-          <h2 class="font-light text-2xl md:font-normal text-[#242424]">
+          <h2 class="font-light text-2xl md:font-normal text-[#242424] w-full">
             Join the Seedsnitch Ambassador Program and assist your
             peers in transforming ideas into startups
             while also earning incentives for each referral.
@@ -119,9 +119,9 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="w-full h-auto">
       <div
-        class="py-4 text-center mx-auto flex flex-col items-center justify-start"
+        class="w-full h-full py-4 text-center mx-auto flex flex-col items-center justify-start"
       >
         <div
           class="w-full p-4 md:py-4 md:px-8 flex flex-row-reverse justify-evenly items-center my-4"
@@ -129,7 +129,7 @@
           <div class="hidden md:flex flex-row justify-center w-1/2">
             <img
               src="../img/ambass2.jpg"
-              class="w-[600px] object-right"
+              class="hidden md:block w-[600px]"
               alt=""
             />
           </div>
@@ -160,10 +160,14 @@
         </div>
 
         <div
-          class="w-full py-4 px-4 flex flex-row justify-between items-center my-4 md:px-8"
+          class="w-full p-4 flex flex-row justify-between items-center my-4 md:px-8"
         >
           <div class="hidden md:flex flex-row justify-center w-1/2">
-            <img src="../img/img2.jpg" class="w-[600px] object-right" alt="" />
+            <img
+              src="../img/img2.jpg"
+              class="hidden md:block w-[600px]"
+              alt=""
+            />
           </div>
           <div
             class="container md:w-1/2 w-full flex flex-col items-center md:items-start justify-center px-6 md:px-12 space-y-3"
@@ -330,6 +334,7 @@
         </div>
       </div>
     </section>
+
     <footer class="bg-[#0f6d6d] text-white py-2 static bottom-0 left-0 w-full">
       <div class="footer w-full">
         <div class="row">
