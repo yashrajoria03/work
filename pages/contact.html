@@ -143,7 +143,7 @@
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  class="block tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-first-name"
                 >
                   First Name
@@ -159,7 +159,7 @@
               </div>
               <div class="w-full md:w-1/2 px-3">
                 <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  class="block tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-last-name"
                 >
                   Last Name
@@ -176,7 +176,7 @@
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
                 <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  class="block tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-email"
                 >
                   Email
@@ -194,7 +194,7 @@
             <div class="flex flex-wrap -mx-3 mb-2">
               <div class="w-full md:w-full px-3">
                 <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  class="block tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-subject"
                 >
                   Subject
@@ -213,7 +213,7 @@
             <div class="flex flex-wrap -mx-3 mb-2 mt-8">
               <div class="w-full md:w-full px-3 mb-6 md:mb-0">
                 <label
-                  class="block uppercase tracking-wide text-darkBlue text-xs font-bold mb-2"
+                  class="block tracking-wide text-darkBlue text-xs font-bold mb-2"
                   for="grid-message"
                 >
                   Message
@@ -254,7 +254,7 @@
               <div>
                 <div>
                   <p class="font-medium text-center">
-                    Phone:&nbsp;+91 8144200700&nbsp;
+                    Phone:&nbsp;+91 7078123790&nbsp;
                   </p>
                   <p class="font-medium text-center">
                     Email:&nbsp;seedsnitch@abc.com&nbsp;
@@ -300,8 +300,10 @@
       <div class="footer">
         <div class="row">
           <a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a>
-          <a href="#" id="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" id="gmail"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+918144200700" id="whatsapp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
           <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
         </div>
 
@@ -318,19 +320,18 @@
       </div>
     </footer>
     <script>
-      var x = document.getElementById("navbar");
-      window.onscroll = function () {
-        if (
-          document.body.scrollTop >= x.clientHeight / 2 ||
-          document.documentElement.scrollTop >= x.clientHeight / 2
-        ) {
-          x.classList.add("navbarColor");
-          // console.log("hello");
-          // x.remove("nav-transparent");
-        } else {
-          x.classList.remove("navbarColor");
-        }
-      };
+      const url =
+        "https://script.google.com/macros/s/AKfycbyj7EL2tV1oxo9fK9fefAu0EuckxFwwb288r7g_Vy4pO76FB3eysSE7DhivQeh7FkkELA/exec";
+      const contactForm = document.forms["contact"];
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(url, { method: "POST", body: new FormData(contactForm) })
+          .then((response) => {
+            alert("Thanks for Contacting us..! We Will revert back to you...");
+            document.getElementById("contact-form").reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
   <script src="../js/scripts.js"></script>

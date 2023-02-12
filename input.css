@@ -366,11 +366,11 @@ details[open] .faq-card-spoiler {
 #linkedin:hover {
   color: rgb(59, 137, 255);
 }
-#instagram:hover {
-  color: violet;
+#whatsapp:hover {
+  color: lightgreen;
 }
-#youtube:hover {
-  color: red;
+#gmail:hover {
+  color: lightgoldenrodyellow;
 }
 #twitter:hover {
   color: powderblue;
