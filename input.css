@@ -367,8 +367,8 @@ details[open] .faq-card-spoiler {
   color: rgb(59, 137, 255);
 }
 #instagram:hover {
-  /* color: violet; */
-  color: rgb(196, 196, 196);
+  color: violet;
+  /* color: rgb(196, 196, 196); */
 }
 #gmail:hover {
   color: rgb(235, 134, 134);
