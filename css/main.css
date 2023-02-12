@@ -1681,11 +1681,12 @@ details[open] .faq-card-spoiler {
 }
 
 #instagram:hover {
-  color: violet;
+  /* color: violet; */
+  color: rgb(196, 196, 196);
 }
 
 #gmail:hover {
-  color: lightgreen;
+  color: rgb(235, 134, 134);
 }
 
 #twitter:hover {
