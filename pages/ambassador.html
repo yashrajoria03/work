@@ -208,8 +208,8 @@
         >
           <form
             class="w-full h-full max-w-2xl px-4 py-6"
-            id="ambassador"
-            name="ambassador"
+            id="ambass-form"
+            name="ambass"
           >
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
@@ -276,7 +276,7 @@
                 <textarea
                   class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-plan"
-                  name="q1"
+                  name="Describe your approach here"
                   placeholder="Describe your approach here..."
                   rows="7"
                   required
@@ -294,7 +294,7 @@
                   Remember, you get rewarded if we help them scale.
                 </label>
                 <textarea
-                  name="q2"
+                  name="Linkedin-Profiles"
                   class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-prob"
                   placeholder="Drop their linkedin profiles here..."
@@ -312,7 +312,7 @@
                   Is there anything you want to tell us about yourself?
                 </label>
                 <textarea
-                  name="q3"
+                  name="tell us about yourself"
                   class="w-full bg-gray-100 text-darkBlue border border-b-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-desc"
                   placeholder="Tell us about yourself..."
@@ -338,10 +338,27 @@
     <footer class="bg-[#0f6d6d] text-white py-2 static bottom-0 left-0 w-full">
       <div class="footer w-full">
         <div class="row">
-          <a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a>
-          <a href="#" id="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
-          <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+          <a
+            target="_blank"
+            href="https://instagram.com/seedsnitch?igshid=ZDdkNTZiNTM="
+            id="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=connect@seedsnitch.in"
+            id="gmail"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/seedsnitch/"
+            id="linkedin"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://twitter.com/seedsnitch" id="twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
         </div>
 
         <div class="row w-full">
@@ -357,15 +374,16 @@
       </div>
     </footer>
     <script>
-      const ambassURL =
-        "https://script.google.com/macros/s/AKfycbzr_Y08kcbAOgVgIbJSc28gtvaBm7ZvGOHselP4ZZg4KgcaAFM3iYhQ5--UQSWbZZ-2Qg/exec";
-      const ambassForm = document.forms["ambassador"];
+      const url =
+        "https://script.google.com/macros/s/AKfycbxdM7XaEJ1Gq1Xy_IrSeUWDV5ARJUKkFv7DcCCIOunwsu1m5IHb85E4TBudYqCpbtEV/exec";
+      const ambassForm = document.forms["ambass"];
       ambassForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        fetch(ambassURL, { method: "POST", body: new FormData(ambassForm) })
-          .then((response) =>
-            alert("Thanks for applying us..! We Will Contact You Soon...")
-          )
+        fetch(url, { method: "POST", body: new FormData(ambassForm) })
+          .then((response) => {
+            alert("Thanks for Applying..! We Will contact you soon.");
+            document.getElementById("ambass-form").reset();
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>

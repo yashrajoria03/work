@@ -128,6 +128,7 @@
           <form
             class="w-full h-full px-4 md:px-8 pt-6 pb-3 md:flex md:items-start md:justify-between bg-white justify-center"
             name="apply"
+            id="apply-form"
           >
             <div
               class="w-full md:w-1/2 flex flex-col md:items-start md:justify-start items-center"
@@ -338,10 +339,27 @@
     <footer class="bg-[#0f6d6d] text-white py-2 static bottom-0 left-0 w-full">
       <div class="footer">
         <div class="row">
-          <a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a>
-          <a href="#" id="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
-          <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+          <a
+            target="_blank"
+            href="https://instagram.com/seedsnitch?igshid=ZDdkNTZiNTM="
+            id="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=connect@seedsnitch.in"
+            id="gmail"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/seedsnitch/"
+            id="linkedin"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://twitter.com/seedsnitch" id="twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
         </div>
 
         <div class="row">
@@ -356,6 +374,20 @@
         <div class="row">Seedsnitch Copyright © 2023 All rights reserved</div>
       </div>
     </footer>
+    <script>
+      const url =
+        "https://script.google.com/macros/s/AKfycbyOIhdFjRk-y8fRCYBcqdgiGdk9eaB6rkLjq8_aI1iC_GeHIzLk4vNFPT24UhI5yxX4mw/exec";
+      const applyForm = document.forms["apply"];
+      applyForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(url, { method: "POST", body: new FormData(applyForm) })
+          .then((response) => {
+            alert("Thanks for applying..! We Will contact you soon.");
+            document.getElementById("apply-form").reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
   <script src="../js/scripts.js"></script>
 </html>
