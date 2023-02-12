@@ -127,6 +127,7 @@
         >
           <form
             class="w-full h-full px-4 md:px-8 pt-6 pb-3 md:flex md:items-start md:justify-between bg-white justify-center"
+            name="apply"
           >
             <div
               class="w-full md:w-1/2 flex flex-col md:items-start md:justify-start items-center"
@@ -144,6 +145,7 @@
                     id="grid-name"
                     type="text"
                     required
+                    name="Name"
                     placeholder="Name"
                   />
                 </div>
@@ -160,6 +162,7 @@
                     class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-email"
                     type="email"
+                    name="Email"
                     required
                     placeholder="Enter your email id"
                   />
@@ -178,6 +181,7 @@
                     id="grid-startname"
                     type="text"
                     required
+                    name="Startup-Name"
                     placeholder="Subject"
                   />
                 </div>
@@ -193,6 +197,7 @@
                   <input
                     class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-name"
+                    name="Linkedin"
                     type="url"
                     placeholder="Your linkedin profile"
                   />
@@ -210,6 +215,7 @@
                     class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-name"
                     required
+                    name="College"
                     type="text"
                     placeholder="College name"
                   />
@@ -227,6 +233,7 @@
                     class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-number"
                     required
+                    name="Contact"
                     placeholder="Enter your contact number "
                     type="number"
                   />
@@ -247,6 +254,7 @@
                     id="grid-stage"
                     type="text"
                     required
+                    name="Status-of-startup"
                     placeholder="Current status of startup"
                   />
                 </div>
@@ -269,6 +277,7 @@
                     id="grid-diff"
                     placeholder="What makes you stand apart?"
                     rows="7"
+                    name="Desc-of-startup"
                     required
                   ></textarea>
                 </div>
@@ -288,6 +297,7 @@
                     placeholder="Problem statement"
                     rows="7"
                     required
+                    name="problem-statement"
                   ></textarea>
                 </div>
               </div>
@@ -306,6 +316,7 @@
                     id="grid-diff"
                     placeholder="What stands you apart?"
                     rows="7"
+                    name="Differentiator"
                     required
                   ></textarea>
                 </div>
@@ -313,12 +324,10 @@
 
               <div class="w-full flex flex-wrap -mx-3">
                 <div class="w-full md:w-full px-3 mb-6 md:mb-0 md:mt-8">
-                  <button
+                  <input
                     class="shadow color focus:shadow-outline focus:outline-none text-white font-semibold px-3 py-2 rounded w-full bg-accent hover:bg-[#37a697]"
-                    type="button"
-                  >
-                    Send
-                  </button>
+                    type="submit"
+                  />
                 </div>
               </div>
             </div>

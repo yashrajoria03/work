@@ -50,7 +50,7 @@
         </a>
       </div>
       <div
-        class="hidden container  pl-28 flex-row items-center justify-center space-x-10 md:flex max-w-1/3"
+        class="hidden container pl-28 flex-row items-center justify-center space-x-10 md:flex max-w-1/3"
       >
         <a href="./about.html" class="link">About</a>
         <a href="#" class="link">Community</a>
@@ -118,7 +118,7 @@
           <h2
             class="md:font-extrabold font-bold text-4xl md:text-5xl pb-2 text-accent"
           >
-            Get in touch <span class="text-[#242424]"> with us </spanc>
+            Get in touch <span class="text-[#242424]"> with us </span>
           </h2>
           <h2 class="font-light text-2xl md:font-normal text-[#242424]">
             Our team is always ready to lend a helping hand and engage in a
@@ -128,16 +128,18 @@
       </div>
     </section>
 
-    <section
-      class="h-auto py-10  px-2 relative md:mb-20 md:mt-0 mt-10"
-    >
+    <section class="h-auto py-10 px-2 relative md:mb-20 md:mt-0 mt-10">
       <div
-        class="h-full w-full flex flex-col gap-4 justify-between md:flex-row  right-4"
+        class="h-full w-full flex flex-col gap-4 justify-between md:flex-row right-4"
       >
         <div
           class="w-full md:w-1/2 h-full rounded-md mx-auto flex flex-row justify-center mr-3"
         >
-          <form class="w-full h-full max-w-lg px-4 py-6" id="contact-form">
+          <form
+            class="w-full h-full max-w-lg px-4 py-6"
+            id="contact-form"
+            name="contact"
+          >
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -151,6 +153,7 @@
                   id="grid-first-name"
                   type="text"
                   required
+                  name="First-Name"
                   placeholder="First Name"
                 />
               </div>
@@ -166,6 +169,7 @@
                   id="grid-last-name"
                   type="text"
                   placeholder="Last Name"
+                  name="Last-Name"
                 />
               </div>
             </div>
@@ -181,6 +185,7 @@
                   class="appearance-none block w-full bg-gray-100 text-darkBlue border border-grabg-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-email"
                   type="email"
+                  name="Email"
                   required
                   placeholder="Enter your email id"
                 />
@@ -199,6 +204,7 @@
                   id="grid-subject"
                   type="text"
                   required
+                  name="Subject"
                   placeholder="Subject"
                 />
               </div>
@@ -217,18 +223,17 @@
                   id="grid-message"
                   placeholder="Enter your message.."
                   rows="7"
+                  name="Message"
                   required
                 ></textarea>
               </div>
             </div>
             <div class="w-full">
               <div class="w-full flex flex-row items-center">
-                <button
+                <input
                   class="shadow color focus:shadow-outline focus:outline-none text-white font-semibold px-3 py-2 rounded w-full bg-accent hover:bg-[#37a697]"
-                  type="button"
-                >
-                  Send
-                </button>
+                  type="submit"
+                />
               </div>
             </div>
           </form>
