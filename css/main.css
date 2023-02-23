@@ -1681,8 +1681,8 @@ details[open] .faq-card-spoiler {
 }
 
 #instagram:hover {
-  /* color: violet; */
-  color: rgb(196, 196, 196);
+  color: violet;
+  /* color: rgb(196, 196, 196); */
 }
 
 #gmail:hover {
@@ -1697,10 +1697,6 @@ details[open] .faq-card-spoiler {
   text-decoration: none;
   /* color: gray; */
   transition: 0.5s;
-}
-
-.footer .row a:hover {
-  color: #fff;
 }
 
 .footer .row ul {

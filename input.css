@@ -382,10 +382,6 @@ details[open] .faq-card-spoiler {
   transition: 0.5s;
 }
 
-.footer .row a:hover {
-  color: #fff;
-}
-
 .footer .row ul {
   width: 100%;
 }
